@@ -11,16 +11,6 @@
     box-shadow: 1px 1px 10px black;
 }
 
-.list{
-    counter-reset: li;
-}
-
-.list li{
-    padding: 15px 0px 0 0;
-    font-size: 16pt;
-    font-weight: bold;
-}
-
 .list a:first-letter{
     color: red;
 }
@@ -31,7 +21,13 @@
     color: black;
     display: inline-block;
     width: 100%;
-    padding-left: 15px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 15pt;
+    /*padding: 15px 0 10px 15px;*/
+}
+.list a span{
+    padding-left: 10px;
 }
 
 /*.list li:before{
@@ -44,16 +40,16 @@
     display: inline-block;
     transition-duration: .2s;
 }*/
-.list li:after{
+.list a:after{
     content: "";
     background-color: red;
     width: 15px;
-    height: 10px;
+    height: 7px;
     display: flex;
     transition-duration: .3s;
 }
 
-.list li:hover::after{
+.list a:hover::after{
     transition-duration: .3s;
     width: 100%;
 }
