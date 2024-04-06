@@ -29,13 +29,21 @@
 }
 .container{
     position: absolute;
-    left: 0;
     transition-duration: 0.4s;
     visibility: hidden;
     opacity: 0;
 }
+.parent{
+    left: 0;
+}
 
-.main-div:hover .container{
+.main-div:hover .parent{
+    transition-duration: 0.4s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.category1:hover .components{
     transition-duration: 0.4s;
     visibility: visible;
     opacity: 1;
@@ -45,3 +53,7 @@
     border-top: 1px solid black;
 }
 
+.components{
+    top: 60px;
+    left: 300px;
+}
