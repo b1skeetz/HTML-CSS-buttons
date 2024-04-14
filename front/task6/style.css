@@ -1,33 +1,113 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
 }
 
-header{
+header {
+    position: relative;
     width: 100%;
     height: 70px;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     width: 100%;
     height: 100%;
 }
 
-.nav-container{
+.nav-container {
     width: 1630px;
     height: 100%;
     padding: 0 30px;
     margin: 0 auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
     display: block;
     width: 82px;
     height: 22.5px;
+    margin-right: 25px;
 }
 
 /*https://www.upwork.com/*/
+.left-nav {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.left-nav button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding-right: 10px;
+}
+
+.button-title {
+    padding: 10px 3px 10px 10px;
+    font-size: 11pt;
+}
+
+.arrow {
+    display: block;
+    width: 12px;
+    height: 12px;
+    transition-duration: .2s;
+}
+
+.button-wrapper:hover .button-title{
+    color: #63b263;
+}
+
+.left-nav > button:hover .button-title{
+    color: #63b263;
+}
+
+.button-wrapper:hover .arrow{
+    transform: rotate(180deg);
+    transition-duration: .2s;
+}
+.content{
+    position: absolute;
+    top: 71px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #63b263;
+}
+.backside1{
+    width: 100%;
+    height: 100%;
+    background-color: #63b263;
+}
+.backside2{
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+}
+.backside3{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+}
+.button-wrapper:hover > .content{
+    visibility: visible;
+    opacity: 1;
+}
+.search-form{
+    width: 330px;
+}
