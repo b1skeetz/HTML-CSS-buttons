@@ -12,10 +12,9 @@
     border-left: 10px solid #a65833;
     transition-duration: 0.2s;
 }
+
 .main-div{
-    /*position: relative;*/
-    /*top: 30px;*/
-    /*left: 30px;*/
+    position: relative;
 }
 
 .list a{
@@ -28,29 +27,30 @@
     width: 100%;
     display: block;
 }
+
 .container{
-    position: absolute;
+    position: relative;
     transition-duration: 0.4s;
     visibility: hidden;
     opacity: 0;
-}
-.parent{
-    left: 0;
-    top: 80px;
+    width: 300px;
 }
 
-.main-div:hover{
+.list:hover{
     transition-duration: 0.2s;
     border-left: 10px solid #63b263;
 }
 
-.main-div:hover .parent{
+.container{
     transition-duration: 0.4s;
-    visibility: visible;
-    top: 60px;
-    opacity: 1;
 }
 
+.main-div:hover > .container{
+    transition-duration: 0.4s;
+    visibility: visible;
+    opacity: 1;
+    left: -10px;
+}
 
 .main-div:hover .container .sub-div{
     border-top: 1px solid black;
@@ -61,59 +61,15 @@
     transition-duration: 0.2s;
     border-left: 10px solid #63b263;
 }
-/*Подкатегории*/
-/*  Оргтехника  */
-.category0:hover .orgtech{
-    transition-duration: 0.4s;
-    visibility: visible;
-    top: 0px;
-    opacity: 1;
-}
-.orgtech{
-    top: 20px;
-    left: 300px;
-}
-/*  Комплектующие  */
-.category1:hover .components{
-    transition-duration: 0.4s;
-    visibility: visible;
-    top: 60px;
-    opacity: 1;
-}
-.components{
-    top: 80px;
-    left: 300px;
-}
-/*  Аудиотехника  */
-.category2:hover .audiotech{
-    transition-duration: 0.4s;
-    visibility: visible;
-    top: 120px;
-    opacity: 1;
-}
-.audiotech{
-    top: 140px;
-    left: 300px;
-}
-/*  Музыкальные инструменты  */
-.category3:hover .musicalinst{
-    transition-duration: 0.4s;
-    visibility: visible;
-    top: 180px;
-    opacity: 1;
-}
-.musicalinst{
-    top: 200px;
-    left: 300px;
+
+.parent .container{
+    top: -61px;
+    left: 260px;
 }
 
-.CPU:hover .CPU-child{
+.sub-div:hover > .container{
     transition-duration: 0.4s;
     visibility: visible;
-    top: 0;
+    left: 290px;
     opacity: 1;
-}
-.CPU-child{
-    top: 20px;
-    left: 300px;
 }
