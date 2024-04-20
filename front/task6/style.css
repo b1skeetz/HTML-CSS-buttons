@@ -42,8 +42,8 @@ header {
 }
 .right-nav{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 40%;
     height: 100%;
 }
 
@@ -75,13 +75,18 @@ header {
     color: #63b263;
 }
 
+.button-wrapper{
+    display: flex;
+    align-items: center;
+}
+
 .button-wrapper:hover .arrow{
     transform: rotate(180deg);
     transition-duration: .2s;
 }
 .content{
     position: absolute;
-    top: 71px;
+    top: 100%;
     left: 0;
     visibility: hidden;
     opacity: 0;
@@ -104,10 +109,95 @@ header {
     height: 100%;
     background-color: orange;
 }
+.button-wrapper:hover{
+    height: 100%;
+}
 .button-wrapper:hover > .content{
     visibility: visible;
     opacity: 1;
 }
+.search-form form{
+    border: 2px solid #e1e1e1;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-nav a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+    font-size: 12pt;
+    font-family: Arial, serif;
+}
+.sign-up-button{
+    display: block;
+    background-color: #388f38;
+    color: white !important;
+    line-height: 35px;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    transition-duration: .15s;
+}
+.sign-up-button:hover{
+    background-color: #5cc25c;
+    transition-duration: .15s;
+}
 .search-form{
-    width: 330px;
+    width: 315px;
+    transition-duration: .2s;
+}
+.search-field{
+    line-height: 35px;
+    padding: 1px 35px 0 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    transition-duration: .4s;
+}
+.for-pick-div{
+    position: relative;
+}
+.search-img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 2%;
+    transition-duration: .2s;
+}
+.line{
+    margin-top: 7px;
+    width: 1px;
+    height: 20px;
+    background-color: #bbbbbb ;
+}
+.talent{
+    border: none;
+    border-radius: 25px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    transition-duration: .4s;
+}
+.arrow-talent{
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+
+.search-form form:hover{
+    background-color: #bbbbbb;
+    transition-duration: .2s;
+}
+.search-form:hover .search-field:hover{
+    background-color: #e5e5e5;
+    transition-duration: .4s;
+}
+.search-form:hover .talent:hover{
+    background-color: #e5e5e5;
+    transition-duration: .4s;
 }
