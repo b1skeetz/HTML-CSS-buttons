@@ -41,10 +41,6 @@
     border-left: 10px solid #63b263;
 }
 
-.container{
-    transition-duration: 0.4s;
-}
-
 .main-div:hover > .container{
     transition-duration: 0.4s;
     visibility: visible;
