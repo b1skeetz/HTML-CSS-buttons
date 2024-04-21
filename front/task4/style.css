@@ -28,7 +28,7 @@ body{
 
 .circle{
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 50%;
     margin-top: -25px;
     width: 50px;
